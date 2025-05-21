@@ -1,0 +1,93 @@
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Elemente speciale în HTML</title>
+</head>
+<body>
+<body bgcolor="white">
+
+
+  <h1>Elemente speciale în HTML</h1>
+
+  <p>În HTML, anumite caractere au semnificații speciale și trebuie scrise folosind <strong>entități HTML</strong> pentru a fi afișate corect.</p>
+
+  <h2>De ce folosim entități HTML?</h2>
+  <ul>
+    <li>Unele caractere sunt rezervate în HTML, de exemplu: <code>&lt;</code> (mai mic), <code>&gt;</code> (mai mare), <code>&amp;</code> (și).</li>
+    <li>Unele caractere speciale nu există pe tastatură sau sunt diacritice și pot avea coduri speciale.</li>
+  </ul>
+
+  <h2>Exemple comune de entități HTML</h2>
+
+  <table border="1" cellpadding="5">
+    <tr>
+      <th>Caracter</th>
+      <th>Entitate HTML</th>
+      <th>Descriere</th>
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>&amp;amp;</td>
+      <td>Simbolul „&amp;” (ampersand)</td>
+    </tr>
+    <tr>
+      <td>&lt;</td>
+      <td>&amp;lt;</td>
+      <td>Simbol „mai mic decât”</td>
+    </tr>
+    <tr>
+      <td>&gt;</td>
+      <td>&amp;gt;</td>
+      <td>Simbol „mai mare decât”</td>
+    </tr>
+    <tr>
+      <td>"</td>
+      <td>&amp;quot;</td>
+      <td>Ghilimele duble</td>
+    </tr>
+    <tr>
+      <td>'</td>
+      <td>&amp;apos;</td>
+      <td>Apostrof (ghilimea simplă)</td>
+    </tr>
+    <tr>
+      <td>©</td>
+      <td>&amp;copy;</td>
+      <td>Simbol copyright</td>
+    </tr>
+    <tr>
+      <td>®</td>
+      <td>&amp;reg;</td>
+      <td>Simbol marcă înregistrată</td>
+    </tr>
+    <tr>
+      <td>€</td>
+      <td>&amp;euro;</td>
+      <td>Simbol euro</td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td>&amp;mdash;</td>
+      <td>Linie de pauză (em dash)</td>
+    </tr>
+  </table>
+
+  <h2>Exemplu de folosire în text</h2>
+  <p>Este important să scrii &lt; și &gt; corect pentru ca browserul să nu le interpreteze ca taguri HTML.</p>
+  <p>De exemplu: &lt;div&gt;Aceasta este o div&lt;/div&gt;.</p>
+
+  <h2>Caractere speciale românești</h2>
+  <p>Pentru diacritice se recomandă folosirea codării UTF-8, dar dacă vrei să scrii direct entitățile:</p>
+  <ul>
+    <li>Ș – &#350; sau &amp;Scedil;</li>
+    <li>ș – &#351; sau &amp;scedil;</li>
+    <li>Ț – &#354; sau &amp;Tcedil;</li>
+    <li>ț – &#355; sau &amp;tcedil;</li>
+    <li>Ă – &#258;</li>
+    <li>ă – &#259;</li>
+    <li>Â – &#194;</li>
+    <li>â – &#226;</li>
+  </ul>
+
+</body>
+</html>

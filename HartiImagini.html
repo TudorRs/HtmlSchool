@@ -1,0 +1,50 @@
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hărți imagine în HTML</title>
+</head>
+<body>
+<body bgcolor="white">
+
+
+  <h1>Hărți imagine în HTML</h1>
+
+  <p>O <strong>hartă imagine</strong> permite să definim zone clicabile diferite pe o singură imagine.</p>
+
+  <h2>Cum se face?</h2>
+  <p>Se folosește tagul <code>&lt;map&gt;</code> cu <code>&lt;area&gt;</code>, apoi imaginea are atributul <code>usemap</code>.</p>
+
+  <h3>Exemplu simplu:</h3>
+
+  <!-- Imagine simplă, sigur încărcabilă -->
+  <img src="harta.png?text=Harta+exemplu" 
+       alt="Hartă simplă" 
+       usemap="#hartaExemplu" 
+       width="600" 
+       height="400" />
+
+  <!-- Definirea hărții -->
+  <map name="hartaExemplu">
+    <!-- Zona clicabilă dreptunghi -->
+    <area shape="rect" coords="50,50,200,150" href="https://www.example.com/zonadreapta" alt="Zona dreapta">
+
+    <!-- Zona clicabilă cerc -->
+    <area shape="circle" coords="400,100,50" href="https://www.example.com/zonacentru" alt="Zona centru">
+
+    <!-- Zona clicabilă poligon -->
+    <area shape="poly" coords="450,150,550,120,590,180,570,220,480,230" href="https://www.example.com/zonastanga" alt="Zona stanga">
+  </map>
+
+  <h2>Explicații:</h2>
+  <ul>
+    <li><code>usemap="#nume"</code> leagă imaginea de o hartă definită prin <code>&lt;map name="nume"&gt;</code>.</li>
+    <li><code>&lt;area&gt;</code> definește zone clicabile pe imagine.</li>
+    <li><code>shape</code> poate fi <code>rect</code> (dreptunghi), <code>circle</code> (cerc) sau <code>poly</code> (poligon).</li>
+    <li><code>coords</code> sunt coordonatele zonei, în pixeli, în funcție de forma aleasă.</li>
+  </ul>
+
+  <h2>Notă:</h2>
+  <p>Coordonatele trebuie calculate în funcție de dimensiunea imaginii afișate.</p>
+
+</body>
+</html>

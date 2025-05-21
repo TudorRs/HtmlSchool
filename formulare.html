@@ -1,0 +1,93 @@
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Formular în HTML</title>
+</head>
+<body>
+<body bgcolor="white">
+
+  <h1>Formulare în HTML</h1>
+
+  <p>Un formular HTML permite colectarea de informații de la utilizatori. Se definește cu tagul <code>&lt;form&gt;</code>.</p>
+
+  <h2>Exemplu complet de formular:</h2>
+
+  <form action="trimite.php" method="post">
+    <!-- Câmp text -->
+    <p>
+      <label for="nume">Nume:</label><br>
+      <input type="text" id="nume" name="nume">
+    </p>
+
+    <!-- Câmp parolă -->
+    <p>
+      <label for="parola">Parolă:</label><br>
+      <input type="password" id="parola" name="parola">
+    </p>
+
+    <!-- Radio buttons -->
+    <p>
+      Gen:<br>
+      <input type="radio" id="masculin" name="gen" value="masculin">
+      <label for="masculin">Masculin</label><br>
+      <input type="radio" id="feminin" name="gen" value="feminin">
+      <label for="feminin">Feminin</label>
+    </p>
+
+    <!-- Checkbox -->
+    <p>
+      <input type="checkbox" id="abonare" name="abonare" value="da">
+      <label for="abonare">Doresc să mă abonez la newsletter</label>
+    </p>
+
+    <!-- Select dropdown -->
+    <p>
+      <label for="oras">Alege orașul:</label><br>
+      <select id="oras" name="oras">
+        <option value="bucuresti">București</option>
+        <option value="cluj">Cluj</option>
+        <option value="iasi">Iași</option>
+      </select>
+    </p>
+
+    <!-- Textarea -->
+    <p>
+      <label for="mesaj">Mesaj:</label><br>
+      <textarea id="mesaj" name="mesaj" rows="4" cols="40"></textarea>
+    </p>
+
+    <!-- Buton de trimitere -->
+    <p>
+      <input type="submit" value="Trimite">
+      <input type="reset" value="Resetează">
+    </p>
+  </form>
+
+  <h2>Explicații scurte</h2>
+  <ul>
+    <li><code>&lt;form&gt;</code> – începe formularul</li>
+    <li><code>action</code> – unde se trimit datele (ex: trimite.php)</li>
+    <li><code>method</code> – metoda de trimitere: <strong>get</strong> sau <strong>post</strong></li>
+    <li><code>input type="text"</code> – câmp pentru text</li>
+    <li><code>input type="password"</code> – câmp ascuns pentru parolă</li>
+    <li><code>radio</code> – selectare unică dintre opțiuni</li>
+    <li><code>checkbox</code> – bifă opțională</li>
+    <li><code>select</code> + <code>option</code> – listă derulantă</li>
+    <li><code>textarea</code> – câmp mare pentru text liber</li>
+    <li><code>submit</code> – buton care trimite formularul</li>
+    <li><code>reset</code> – resetează toate câmpurile</li>
+  </ul>
+
+<font size="10">Exemplu fisier test</font><br>
+<img src="test1.jpg"><br>
+<font size="10">Exemplu fisier raspuns</font><br>
+<img src="test2.jpg"><br>
+<font size="10">Test ex:</font><br>
+<img src="test3.jpg"><br>
+<font size="10">Raspuns ex:</font><br>
+<img src="test4.jpg"><br>
+
+
+
+</body>
+</html>

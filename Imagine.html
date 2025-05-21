@@ -1,0 +1,49 @@
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Imagini în HTML</title>
+</head>
+<body>
+<body bgcolor="white">
+  <h1>Imagini în HTML</h1>
+
+  <p>HTML folosește tagul <code>&lt;img&gt;</code> pentru a insera imagini. Acest tag este <strong>vid</strong> (nu are etichetă de închidere) și se folosesc doar atribute.</p>
+
+  <h2>1. Imagine de pe internet</h2>
+  <p>Exemplu cu o imagine de pe web:</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/HTML5_Logo.png" alt="Logo HTML5" width="150">
+
+  <p><strong>Explicație:</strong></p>
+  <ul>
+    <li><code>src</code> – adresa imaginii (link complet sau nume fișier)</li>
+    <li><code>alt</code> – text alternativ afișat dacă imaginea nu se încarcă (important pentru accesibilitate)</li>
+    <li><code>width</code> / <code>height</code> – controlează dimensiunile (în pixeli)</li>
+  </ul>
+
+  <h2>2. Imagine locală (din același folder cu fișierul HTML)</h2>
+  <p>Presupunem că ai un fișier numit <code>floare.jpg</code> în același folder:</p>
+  <img src="floare.jpg" alt="O floare frumoasă" width="200">
+
+  <p><strong>Notă:</strong> Pentru ca această imagine să apară, fișierul <code>floare.jpg</code> trebuie să fie în același folder cu fișierul .html.</p>
+
+  <h2>3. Imagine cu titlu (tooltip la hover)</h2>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Internet2.jpg" alt="Rețea internet" width="200" title="Imagine despre internet">
+
+  <p><code>title</code> adaugă un mesaj scurt care apare când treci cu mouse-ul peste imagine.</p>
+
+  <h2>4. Imagine fără dimensiuni specificate</h2>
+  <p>Imaginea se afișează la dimensiunea sa reală:</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Smiley.svg" alt="Emoji">
+
+  <h2>5. Imagine ca parte dintr-un link</h2>
+  <p>Poți face clic pe imagine și să mergi spre un link:</p>
+  <a href="https://www.w3schools.com/html/html_images.asp" target="_blank">
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools" width="150">
+  </a>
+
+  <h2>Concluzie</h2>
+  <p>Tagul <code>&lt;img&gt;</code> este esențial în HTML pentru a adăuga imagini statice. Atributele <code>src</code>, <code>alt</code>, <code>width</code>, <code>height</code> și <code>title</code> sunt cele mai importante.</p><br>
+<img src="img1.jpg"><br>
+<img src="img2.jpg"><br>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabele în HTML</title>
+</head>
+<body>
+<body bgcolor="white">
+
+  <h1>Tabele în HTML</h1>
+
+  <p>HTML folosește tagul <code>&lt;table&gt;</code> pentru a crea tabele. Un tabel este alcătuit din rânduri (<code>&lt;tr&gt;</code>) și celule (<code>&lt;td&gt;</code> sau <code>&lt;th&gt;</code>).</p>
+
+  <h2>1. Tabel simplu</h2>
+  <p>Un tabel cu 2 rânduri și 3 coloane:</p>
+
+  <table border="1">
+    <tr>
+      <th>Nume</th>
+      <th>Vârstă</th>
+      <th>Oraș</th>
+    </tr>
+    <tr>
+      <td>Maria</td>
+      <td>25</td>
+      <td>București</td>
+    </tr>
+    <tr>
+      <td>Ion</td>
+      <td>30</td>
+      <td>Cluj</td>
+    </tr>
+  </table>
+
+  <h2>2. Celule care se întind pe mai multe coloane (colspan)</h2>
+  <table border="1">
+    <tr>
+      <th colspan="2">Date personale</th>
+    </tr>
+    <tr>
+      <td>Nume:</td>
+      <td>Andrei Pop</td>
+    </tr>
+  </table>
+
+  <h2>3. Celule care se întind pe mai multe rânduri (rowspan)</h2>
+  <table border="1">
+    <tr>
+      <th rowspan="2">Materie</th>
+      <td>Matematică</td>
+    </tr>
+    <tr>
+      <td>Informatică</td>
+    </tr>
+  </table>
+
+  <h2>4. Tabel mai complex</h2>
+  <table border="1">
+    <tr>
+      <th>Produs</th>
+      <th>Preț</th>
+      <th>Cantitate</th>
+    </tr>
+    <tr>
+      <td>Pâine</td>
+      <td>5 lei</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Lapte</td>
+      <td>6 lei</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Total</strong></td>
+      <td>3</td>
+    </tr>
+  </table>
+
+  <h2>5. Rezumat</h2>
+  <ul>
+    <li><code>&lt;table&gt;</code> – începe un tabel</li>
+    <li><code>&lt;tr&gt;</code> – definește un rând</li>
+    <li><code>&lt;td&gt;</code> – definește o celulă normală</li>
+    <li><code>&lt;th&gt;</code> – definește o celulă de antet (apare cu text bold și centrat implicit în browser)</li>
+    <li><code>border="1"</code> – adaugă contur tabelului (doar pentru exemplu simplu, în practică se folosește CSS)</li>
+    <li><code>colspan</code> – întinde o celulă pe mai multe coloane</li>
+    <li><code>rowspan</code> – întinde o celulă pe mai multe rânduri</li>
+  </ul>
+
+<br>
+<font size="10">Explicatii</font><br>
+<img src="tab.jpg"><br>
+<font size="10">Aliniere Exemplu</font><br>
+<img src="tab2.jpg"><br>
+<font size="10">Rowspan&Colspan Exemple</font><br>
+<img src="tab3.jpg"><br>
+</body>
+</html>
